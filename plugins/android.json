@@ -1,0 +1,41 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.wisnior.informalworker3"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.wisnior.informalworker2"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.wisnior.informalworker3"
+    }
+  }
+}

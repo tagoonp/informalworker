@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="./node_modules/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="./node_modules/preload.root.js/dist/css/preload.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./assets/custom/css/style.css">
+
+        <title>DSRR Connect</title>
+    </head>
+    <body>
+
+        <div data-role="page" id="app" style="background-color: #3d4c5b;">
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-12 col-sm-4 offset-sm-4">
+                <div class="row">
+                  <div class="col-6 offset-3">
+                    <img src="./img/logo.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 text-center pt-3">
+                    <h3 class="tsdn text-white">ฐานข้อมูลแรงงานนอกระบบ</h3>
+                    <h6 class="tsdn text-white">Informal Labor Database</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 offset-1 pt-3">
+                    <form onsubmit="return false;" class="loginForm">
+                      <div class="form-group">
+                        <input type="text" class="form-control custom-input-1 text-center" data-role="none" id="txtUsername" placeholder="อีเมลหรือหมายเลขโทรศัพท์">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control custom-input-1 text-center" data-role="none" id="txtPassword" placeholder="รหัสผ่าน">
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary text-white btn-block" data-role="none" type="submit" data-role="none">เข้าสู่ระบบ</button>
+                      </div>
+                    </form>
+                    <div class="form-group text-center pt-2 tsdn text-white" style="font-size: 1.2em;">
+                      <a href="#register" class="text-white tsdn mr-3 btnChangepage" data-transition="slide">สมัครใช้งาน</a>|
+                      <a href="#forgetpassword" class="text-white tsdn ml-3 btnChangepage" data-transition="slide">ลืมรหัสผ่าน</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .app -->
+
+        <div data-role="page" id="register" style="background-color: #3d4c5b;">
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-12 col-sm-4 offset-sm-4">
+                <div class="row">
+                  <div class="col-12 text-center pt-3">
+                    <h3 class="tsdn text-white">สมัครใช้งาน</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 offset-1 pt-3">
+                    <form onsubmit="return false;" class="registerForm">
+                      <div class="form-group">
+                        <input type="text" class="form-control custom-input-1 text-center" id="txtUsername1" data-role="none" placeholder="อีเมลหรือหมายเลขโทรศัพท์">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control custom-input-1 text-center" id="txtPassword1" data-role="none" placeholder="ตั้งรหัสผ่าน">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control custom-input-1 text-center" data-role="none" id="txtFname" placeholder="ชื่อ">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control custom-input-1 text-center" data-role="none" id="txtLname" placeholder="นามสกุล">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control custom-input-1 text-center" data-role="none" id="txtInstitution" placeholder="ชื่อหน่วยงานที่สังกัด">
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control cusom-input-1 text-center txtProvince" name="txtProvince" id="txtProvince" data-role="none" style="text-align-last:center; padding-left: 29px;">
+                          <option value="" class="text-center">-- เลือกจังหวัดที่รับผิดชอบ --</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control cusom-input-1 text-center" name="txtDistrict" id="txtDistrict" data-role="none" style="text-align-last:center; padding-left: 29px;">
+                          <option value="" class="text-center">-- เลือกอำเภอ --</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <select class="form-control cusom-input-1 text-center" name="txtSubdistrict" id="txtSubdistrict" data-role="none" style="text-align-last:center; padding-left: 29px;">
+                          <option value="" class="text-center">-- เลือกตำบล --</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary text-white btn-block" type="submit" data-role="none">ลงทะเบียน</button>
+                      </div>
+                    </form>
+                    <div class="form-group text-center pt-2 tsdn text-white" style="font-size: 1.2em;">
+                      <a href="#app" class="text-white tsdn btnChangepage" data-transition="slide" data-direction="reverse">กลับหน้าเข้าสู่ระบบ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .register -->
+
+        <div data-role="page" id="forgetpassword" style="background-color: #3d4c5b;">
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-12 col-sm-4 offset-sm-4">
+                <div class="row">
+                  <div class="col-6 offset-3">
+                    <img src="./img/logo.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 text-center pt-3">
+                    <h3 class="tsdn text-white">ส่งรหัสผ่าน</h3>
+                    <p class="tsdn text-white">กรอกอีเมลแอดเดรสที่ได้เพิ่มไว้ในระบบ</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-10 offset-1 pt-3">
+                    <form onsubmit="return false;" class="passwordForm">
+                      <div class="form-group">
+                        <input type="email" class="form-control custom-input-1 text-center" id="txtUsername2" placeholder="อีเมลหรือหมายเลขโทรศัพท์">
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary text-white btn-block" type="submit" data-role="none">ส่งข้อมูลรหัสผ่าน</button>
+                      </div>
+                    </form>
+                    <div class="form-group text-center pt-2 tsdn text-white" style="font-size: 1.2em;">
+                      <a href="#app" class="text-white tsdn btnChangepage" data-transition="slide" data-direction="reverse">กลับหน้าเข้าสู่ระบบ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .forgetpassword -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="./node_modules/jquery.mobile-1.4.5/js/jquery.min.js"></script>
+        <script type="text/javascript" src="./node_modules/jquery.mobile-1.4.5/js/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script type="text/javascript" src="./node_modules/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="./node_modules/preload.root.js/dist/js/preload.js"></script>
+
+        <!-- Ststem core -->
+        <script type="text/javascript" src="./assets/custom/js/config.js" ></script>
+        <script type="text/javascript" src="./assets/custom/js/core.js" ></script>
+
+        <!-- Page script -->
+        <script type="text/javascript" src="./assets/custom/js/login.js" ></script>
+        <script type="text/javascript" src="./assets/custom/js/register.js" ></script>
+        <script type="text/javascript" src="./assets/custom/js/forgetpassword.js" ></script>
+
+        <script>
+
+          $(document).ready(function(){
+
+            preload.hide()
+            iw.get_province()
+            if((current_user != null) && (current_role != null)){
+              window.location = './' + current_role + '/index.html'
+            }
+
+          })
+
+          $(function(){
+            $('.btnChangepage').click(function(){
+              $('.form-control').removeClass('is-invalid')
+            })
+
+            $('#txtProvince').change(function(){
+              iw.get_district()
+            })
+
+            $('#txtDistrict').change(function(){
+              iw.get_subdistrict()
+            })
+
+          })
+        </script>
+    </body>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="notify1Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-center">
+          <h4>ขออภัย</h4>
+          <p>ชื่อบัญชีผู้ใช้หรือรหัสผ่านไม่ถูกต้อง</p>
+          <div class="text-center">
+            <button class="btn btn-danger btn-block" data-dismiss="modal">รับทราบ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="notifyRegisterfailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-center">
+          <h4>ขออภัย</h4>
+          <p>ไม่สามารถลงทะเบียนใช้งานได้</p>
+          <div class="text-center">
+            <button class="btn btn-danger btn-block" data-dismiss="modal">รับทราบ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade mt-5" id="modalVersion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered- modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="text-center">
+          <div class="row">
+            <div class="col-12 pb-3 pt-4">
+              <img src="./img/alert.png" alt="" style="max-width: 100px;">
+            </div>
+          </div>
+          <h4>คำเตือน</h4>
+          <p class="text-muted" style="font-size: 16px;">มีเวอร์ชันใหม่รอการอัพเดท</p>
+          <div class="text-center pb-2">
+            <button class="btn btn-danger btn-block btn-lg" data-role="none" onclick="gotoUpdate()">อัพเดท</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
