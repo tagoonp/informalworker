@@ -61,80 +61,75 @@
               <div class="card c-drop-shadow-" style="border:none; background: none !important;">
                 <div class="card-body" style=" background: none !important;">
                   <div class="row">
-                    <div class="col-4 text-center">
-                      <a href="#part_1_1" data-transition="slide" class="text-dark">
-                        <div class="pt-2 pl-3 pr-3 pb-2">
-                          <img src="../img/demo.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="pb-3">ข้อมูลส่วนบุคคล</div>
-                      </a>
-                    </div>
-
-                    <div class="col-4 text-center">
-                      <a href="#part_1_2" data-transition="slide" class="text-dark">
-                        <div class="pt-2 pl-3 pr-3 pb-2">
-                          <img src="../img/health.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="pb-3">ข้อมูลสุขภาพ</div>
-                      </a>
-                    </div>
-
-                    <div class="col-4 text-center">
-                      <a href="#appMap" data-transition="slide" class="text-dark">
-                        <div class="pt-2 pl-3 pr-3 pb-2">
-                          <img src="../img/homeplace.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="pb-3">ที่อยู่และที่ทำงาน</div>
-                      </a>
-                    </div>
-
-                    <div class="col-4 text-center">
-                      <a href="#appMap" data-transition="slide" class="text-dark">
-                        <div class="pt-2 pl-3 pr-3 pb-2">
-                          <img src="../img/job.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="pb-3">อาชีพที่ 1</div>
-                      </a>
-                    </div>
-
-                    <div class="col-4 text-center">
-                      <a href="#appMap" data-transition="slide" class="text-dark">
-                        <div class="pt-2 pl-3 pr-3 pb-2">
-                          <img src="../img/job.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="pb-3">อาชีพที่ 2</div>
-                      </a>
-                    </div>
-
-                    <div class="col-4 text-center">
-                      <a href="#appMap" data-transition="slide" class="text-dark">
-                        <div class="pt-2 pl-3 pr-3 pb-2">
-                          <img src="../img/map-1.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="pb-3">ดูแผนที่</div>
-                      </a>
-                    </div>
-
-                    <!-- Inappbrowser for report -->
-                    <div class="col-4 text-center">
+                    <div class="col-4 text-center" onclick="slide2('part_1_1')">
                       <div class="pt-2 pl-3 pr-3 pb-2">
-                        <img src="../img/report.png" alt="" class="img-fluid">
+                        <img src="../img/demo-2.png" alt="" class="img-fluid">
                       </div>
-                      <div class="pb-3">รายงานสถิติ</div>
+                      <div class="pb-3">ข้อมูลส่วนบุคคล</div>
+                    </div>
+
+                    <div class="col-4 text-center" onclick="slide2('part_1_2')">
+                      <div class="pt-2 pl-3 pr-3 pb-2">
+                        <img src="../img/health.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">ข้อมูลสุขภาพ</div>
+                    </div>
+
+                    <div class="col-4 text-center" onclick="slide2('part_1_3')">
+                      <div class="pt-2 pl-3 pr-3 pb-2" id="btnHomeplace">
+                        <img src="../img/homeplace.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">ที่อยู่/ที่ทำงาน</div>
+                    </div>
+
+                    <div class="col-4 text-center">
+                      <div class="pt-2 pl-3 pr-3 pb-2" onclick="slide2('part_2_1')">
+                        <img src="../img/job.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">อาชีพที่ 1</div>
+                    </div>
+
+                    <div class="col-4 text-center" onclick="slide2('part_2_2')">
+                      <div class="pt-2 pl-3 pr-3 pb-2">
+                        <img src="../img/job.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">อาชีพที่ 2</div>
+                    </div>
+
+                    <div class="col-4 text-center" onclick="slide2('part_3')">
+                      <div class="pt-2 pl-3 pr-3 pb-2">
+                        <img src="../img/accident.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">การบาดเจ็บ</div>
+                    </div>
+
+                    <div class="col-4 text-center" onclick="slide2('part_4')">
+                      <div class="pt-2 pl-3 pr-3 pb-2">
+                        <img src="../img/knowledge.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">ความรอบรู้ในการจัดการ</div>
+                    </div>
+
+                    <div class="col-4 text-center" onclick="slide2('part_5_1')">
+                      <div class="pt-2 pl-3 pr-3 pb-2">
+                        <img src="../img/map-1.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="pb-3">บันทึกพิกัด</div>
                     </div>
 
                     <!-- Inappbrowser for document -->
-                    <div class="col-4 text-center" id="btnDocument">
+                    <div class="col-4 text-center" onclick="slide2('part_6')">
                       <div class="pt-2 pl-3 pr-3 pb-2">
                         <img src="../img/camera.png" alt="" class="img-fluid">
                       </div>
                       <div class="pb-3">ภาพถ่าย</div>
                     </div>
-                    <div class="col-4 text-center" onclick="authen.signout()" data-ajax="false">
+
+                    <div class="col-4 text-center"  onclick="labor.delete()">
                       <div class="pt-2 pl-3 pr-3 pb-2">
-                        <img src="../img/signout.png" alt="" class="img-fluid">
+                        <img src="../img/deletelabor.png" alt="" class="img-fluid">
                       </div>
-                      <div class="pb-3">ออกจากโปรแกรม</div>
+                      <div class="pb-3">ลบข้อมูลแรงงาน</div>
                     </div>
 
 
@@ -147,99 +142,7 @@
       </div>
       <!-- .app -->
 
-      <div data-role="page" id="profile" style="background: #f4f4f4;">
-        <div class="container pt-5">
-          <div class="row">
-            <div class="col-12 col-sm-4 offset-sm-4">
-              <div class="row">
-                <div class="col-6 offset-3 col-sm-8 offset-sm-2 pt-0 mt-0" id="profileImg">
-                  <img src="../img/tmp-profile-img.png" alt="" class="img-fluid img-circle">
-                </div>
-                <div class="col-12 text-center">
-                  <div class="btn btn-primary btn-circle btn-lg" style="margin-top: -50px; margin-left: 100px;" onclick="app.takephoto()">
-                    <i class="fas fa-camera"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 text-center pt-3">
-                  <h4 class="tsdn text-dark textUserFullname"><i class="fas fa-sync fa-spin"></i></h4>
-                  <h6 class="tsdn text-dark textUserRole">ผู้ใช้งานทั่วไป</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-3" style="margin-bottom: 100px;">
-            <div class="col-12">
-              <div class="card c-drop-shadow-" style="border:none; background-: none !important;">
-                <div class="card-body p-0" style=" background: none !important; font-size: 16px;">
-                  <div class="row">
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">ชื่อ - นามสกุล</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;"  data-toggle="modal" data-target="#modalFullname"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserFullname">-</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">E-mail address</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;" data-toggle="modal" data-target="#modalEmail"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserEmail">-</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">หมายเลขโทรศัพท์</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;" data-toggle="modal" data-target="#modalPhone"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserPhone">-</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">หน่วยงานที่สังกัด</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;"  data-toggle="modal" data-target="#modalInstitution"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserInstitution">-</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">จังหวัดที่รับผิดชอบ</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;" data-toggle="modal" data-target="#modalInstitution"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserProvince">-</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">อำเภอ</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;" data-toggle="modal" data-target="#modalInstitution"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserDistrict">-</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <div class="p-3">
-                        <small class="text-success">ตำบล</small><a href="#" data-ajax="false" class="float-right" style="font-size: 13px; margin-top: 20px;" data-toggle="modal" data-target="#modalInstitution"><i class="fas fa-pencil-alt"></i></a><br>
-                        <div class="textUserSubdistrict">-</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 pt-4">
-              <button class="btn btn-primary btn-block" data-role="none" data-toggle="modal" data-target="#modalPassword">เปลี่ยนรหัสผ่าน</button>
-              <button class="btn btn-danger btn-block" data-role="none" onclick="authen.signout()">ลงชื่อออก</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- .profile -->
-
-      <div data-role="page" id="appAdd" style="background: #fff; z-index: 999999998 !important;">
+      <div data-role="page" id="part_1_1" style="background: #fff;">
         <div class="container-fluid" style="background: #fff;">
           <div class="row" style="">
             <div class="col-12 pt-3">
@@ -248,118 +151,7 @@
           </div>
           <div class="row pt-3 " style="margin-top: -38px;">
             <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 169);">
-              <span data-ajax="false" style="color: rgb(51, 51, 51); font-size: 18px;">ขั้นที่ 1 : <span class="text-danger">ค้นหาข้อมูลเดิม</span> </span>
-            </div>
-          </div>
-        </div>
-        <div class="container pt-3">
-          <div class="" style="top: 90px;">
-            <div class="row">
-              <div class="col-12 pl-3 pr-3">
-                <div class="text-center" style="font-size: 14px;">
-                  การกรอกเขตบัตรประชาชน ทำให้ท่านสามารถค้นหาข้อมูลเดิมของบุคคลนั้นจากระบบได้โดยที่ท่านอาจไม่ต้องเพิ่มข้อมูลใหม่ทั้งหมด
-                </div>
-                <form onsubmit="return false;" data-role="none">
-                  <div class="form-group pt-3 text-center">
-                    <label for="">เลขบัตรประจำตัวประชาชน</label>
-                    <input type="text" id="txtSearchkey1" class="form-control custom-input-1 text-center" data-role="none">
-                  </div>
-
-                  <div class="form-group">
-                    <button class="btn btn-primary btn-block" data-role="none" onclick="labor.addNew()"><i class="fas fa-search"></i> ค้นหา</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div data-role="page" id="appSearch" style="background: #f4f4f4;">
-        <div class="container-fluid" style="background: #fff;">
-          <div class="row">
-            <div class="col-12 pt-3">
-              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
-            </div>
-          </div>
-          <div class="row pt-3">
-            <div class="col-12 text-center pb-2" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 100);">
-              <a href="#" data-ajax="false" style="color: rgb(51, 51, 51); font-size: 18px;">ค้นหาข้อมูลกิจกรรม</a>
-            </div>
-          </div>
-        </div>
-        <div class="container pt-3">
-          <div class="searchList" style="margin-bottom: 100px; padding-top: 210px;">
-
-          </div>
-          <div id="map-tool-1" class="" style="top: 90px;">
-            <div class="card" style="border-radius-: 0px;">
-              <div class="card-body">
-                <form onsubmit="return false;" data-role="none">
-                  <div class="form-group">
-                    <label for="">คำค้นหา / ชื่อกิจกรรม</label>
-                    <input type="text" id="txtSearchkey" class="form-control custom-input-2" data-role="none">
-                  </div>
-
-                  <div class="form-group">
-                    <button class="btn btn-primary btn-lg btn-block" data-role="none" onclick="searchActivity()"><i class="fas fa-search"></i> ค้นหา</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div data-role="page" id="appMap" style="background: #fff;">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 pt-3">
-              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
-            </div>
-          </div>
-          <div class="row pt-3">
-            <div class="col-12 text-center pb-2" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 100);">
-              <a href="#" data-ajax="false" style="color: rgb(51, 51, 51); font-size: 18px;">สถานที่จัดกิจกรรมทั้งหมด</a>
-            </div>
-          </div>
-        </div>
-        <div class="container pt-3">
-          <div id="map"></div>
-          <div id="map-tool-1" class="dn">
-            <div class="card">
-              <div class="card-body">
-                <form onsubmit="return false;" data-role="none">
-                  <div class="form-group">
-                    <label for="">Latitude</label>
-                    <input type="text" id="txtLat1" class="form-control custom-input-2" data-role="none">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="">Longitude</label>
-                    <input type="text" id="txtLng1" class="form-control custom-input-2" data-role="none">
-                  </div>
-
-                  <div class="form-group">
-                    <button class="btn btn-primary btn-lg btn-block" data-role="none" onclick="addLocation()">บันทึกพิกัดนี้</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div data-role="page" id="addPerson" style="background: #fff;">
-        <div class="container-fluid" style="background: #fff;">
-          <div class="row" style="">
-            <div class="col-12 pt-3">
-              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative; z-index: 9999  !important;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
-            </div>
-          </div>
-          <div class="row pt-3 " style="margin-top: -38px;">
-            <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 169);">
-              <span data-ajax="false" style="color: rgb(0, 193, 169); font-size: 18px;"><span class="text-danger-">เพิ่มข้อมูลแรงงานใหม่</span> </span>
+              <span data-ajax="false" style="color: rgb(0, 193, 169); font-size: 18px;"><span class="text-danger-">ข้อมูลส่วนบุคคล</span> </span>
             </div>
           </div>
         </div>
@@ -828,7 +620,7 @@
                   </div>
 
                   <div class="form-group pb-5">
-                    <button class="btn btn-primary btn-block btn-lg" data-role="none" onclick="labor.saveDemographic()">บันทึก</button>
+                    <button class="btn btn-primary btn-block btn-lg" data-role="none" onclick="labor.saveDemographic2()">บันทึก</button>
                   </div>
                 </form>
               </div>
@@ -836,6 +628,643 @@
           </div>
         </div>
       </div>
+
+      <div data-role="page" id="part_1_2" style="background: #fff;">
+        <div class="container-fluid" style="background: #fff;">
+          <div class="row" style="">
+            <div class="col-12 pt-3">
+              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative; z-index: 9999  !important;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
+            </div>
+          </div>
+          <div class="row pt-3 " style="margin-top: -38px;">
+            <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 169);">
+              <span data-ajax="false" style="color: rgb(0, 193, 169); font-size: 18px;"><span class="text-danger-">ข้อมูลส่วนบุคคล</span> </span>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-3">
+          <div class="" style="top: 90px;">
+            <div class="row">
+              <div class="col-12 pl-3 pr-3">
+                <h4 class="tsdn text-danger">ส่วนที่ 1</h4>
+                <h5 class="tsdn">ตอนที่ 1.2 : ข้อมูลสุขภาพและพฤติกรรมสุขภาพ</h5>
+                <form onsubmit="return false;" data-role="none">
+                  <div class="form-group mb-3" id="radiogroup-q11">
+                    <label for="">โรคประจำตัวที่<span class="text-danger">แพทย์วินิจฉัย</span> : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q11" value="0" class="selectgroup-input" checked="" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-4 col-sm-3" style="padding-top: 12px;">ไม่มี</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q11" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-4 col-sm-3" style="padding-top: 12px;">มี</div>
+                      </div>
+                    </div>
+                    <div class="hdQ11 dn">
+                        <div class="form-group">
+                            <input type="text" id="txtQ11" class="form-control core-input" placeholder="กรอกชื่อของโรค แต่ละยาคั่นด้วย (,) " data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q12">
+                    <label for="">ยาที่กินบ่อย (ทั้งแผนปัจจุบัน/สมุนไพร) : <span class="text-danger">*</span><br><small class="text-danger">ตอบได้มากกว่า 1 ข้อ</small></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q12" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่กิน</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q12" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">กิน เป็นยารักษาโรคประจำตัว</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q12" value="2" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">กิน เป็นยาซื้อกินเอง</div>
+
+                      </div>
+                    </div>
+                    <div class="hdQ12 dn">
+                        <div class="form-group">
+                            <input type="text" id="txtQ12" class="form-control core-input" placeholder="กรอกชื่อของยา แต่ละยาคั่นด้วย (,) " data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q13">
+                    <label for="">การสูบบุหรี่/ยาเส้น : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q13" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่เคยสูบ</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q13" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">เคยสูบ ปัจจุบันเลิกแล้ว</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q13" value="2" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">นาน ๆ สูบ</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q13" value="3" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">สูบเป็นประจำ</div>
+
+                      </div>
+                    </div>
+
+                    <div class="hdQ13 dn">
+                        <div class="form-group">
+                            <input type="text" id="txtQ13" class="form-control core-input" placeholder="สูบวันละกี่มวน" data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q14">
+                    <label for="">การดื่มแอลกอฮอล์/ของมึนเมา : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q14" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่เคยดื่ม</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q14" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">เคยดื่ม ปัจจุบันเลิกแล้ว</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q14" value="3" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">ดื่มเป็นประจำ</div>
+
+                      </div>
+                    </div>
+
+                    <div class="hdQ14 dn">
+                        <div class="form-group">
+                            <input type="number"  id="txtQ14" class="form-control core-input" placeholder="ดื่มวันละกี่แก้ว / แป๊ก / ประป๋อง / ขวด" data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q15">
+                    <label for="">การล้างมือก่อนทางอาหาร : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q15" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่ล้าง</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q15" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">ล้างด้วยน้ำเปล่า</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q15" value="2" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">ล้างด้วยน้ำเปล่าและฟอกสบู่</div>
+
+                      </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q16">
+                    <label for="">การตรวจสุขภาพประจำปี  : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q16" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่เคยตรวจ</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q16" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">เคยตรวจ</div>
+
+                      </div>
+                    </div>
+
+                    <div class="hdQ16 dn">
+                        <div class="form-group pt-2">
+                            <input type="text" id="txtQ16" class="form-control core-input" placeholder="ความผิดปกติที่พบคือ ...." data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q17">
+                    <label for="">การตรวจคัดกรองสุขภาพเบื้องต้น <span class="text-danger">(เช่น ตรวจสารเคมีตกค้างในเลือด การตรวจสมรรถภาพปอด)</span> : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q17" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่เคยตรวจ</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q17" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">เคยตรวจ</div>
+
+                      </div>
+                    </div>
+
+                    <div class="hdQ17 dn">
+                        <div class="form-group">
+                            <input type="text" id="txtQ17" class="form-control core-input" placeholder="ความผิดปกติที่พบคือ ...." data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                <!-- .Start -->
+                <div class="form-group mb-3" id="radiogroup-q18">
+                    <label for="">การรับวัคซีน <span class="text-danger">(เช่น บาดทะยัก ไข้หวัดใหญ่ คอตีบ)</span> : <span class="text-danger">*</span></label>
+                    <div class="selectgroup selectgroup-pills">
+                      <div class="row">
+                          <div class="col-2 col-sm-1">
+                              <label class="selectgroup-item">
+                                  <input type="radio" name="icon-input-q18" value="0" class="selectgroup-input" data-role="none">
+                                  <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                              </label>
+                          </div>
+                          <div class="col-10 col-sm-3" style="padding-top: 12px;">ไม่เคยรับ</div>
+
+                        <div class="col-2 col-sm-1">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="icon-input-q18" value="1" class="selectgroup-input" data-role="none">
+                                <span class="selectgroup-button selectgroup-button-icon btn-icon" style="width: 25px; height: 38px;"><i class="fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        <div class="col-10 col-sm-3" style="padding-top: 12px;">เคยรับ</div>
+
+                      </div>
+                    </div>
+
+                    <div class="hdQ18 dn">
+                        <div class="form-group pt-2">
+                            <input type="text" id="txtQ18" class="form-control core-input" placeholder="ชื่อวัคซีน ...." data-role="none">
+                        </div>
+                    </div>
+                </div>
+                <!-- .End -->
+
+                  <div class="form-group pb-5">
+                    <button class="btn btn-primary btn-block btn-lg" data-role="none" onclick="labor.savePart1_2()">บันทึก</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .part_1_2 -->
+
+      <div data-role="page" id="part_1_3" style="background: #fff;">
+        <div class="container-fluid" style="background: #fff;">
+          <div class="row" style="">
+            <div class="col-12 pt-3">
+              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative; z-index: 9999  !important;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
+            </div>
+          </div>
+          <div class="row pt-3 " style="margin-top: -38px;">
+            <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 169);">
+              <span data-ajax="false" style="color: rgb(0, 193, 169); font-size: 18px;"><span class="text-danger-">ข้อมูลส่วนบุคคล</span> </span>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-3">
+          <div class="" style="top: 90px;">
+            <div class="row">
+              <div class="col-12 pl-3 pr-3">
+                <h4 class="tsdn text-danger">ส่วนที่ 1</h4>
+                <h5 class="tsdn">ตอนที่ 1.3 : ที่อยู่อาศัย</h5>
+                <form onsubmit="return false;" data-role="none">
+                  <div class="row">
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">บ้านเลขที่ : <span class="text-danger">*</span></label>
+                          <input type="text" id="txtHomeNo" class="form-control core-input" placeholder="กรอกบ้านเลขที่ ..." data-role="none">
+                      </div>
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">หมู่ที่ : </label>
+                          <input type="text" id="txtHomeMoo" class="form-control core-input" placeholder="กรอกหมู่ที่ ..." data-role="none">
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">ถนน : </label>
+                          <input type="text" id="txtHomeRoad" class="form-control core-input" placeholder="กรอกชื่อถนน ..." data-role="none">
+                      </div>
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">จังหวัด : <span class="text-danger">*</span></label>
+                          <select name="txtHomeProvince" id="txtHomeProvince" class="form-control core-input txtProvince" data-role="none">
+                              <option value="" selected>เลือกจังหวัด</option>
+                          </select>
+                      </div>
+
+                  </div>
+
+                  <div class="row">
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">อำเภอ : <span class="text-danger">*</span></label>
+                          <select name="txtHomeDistrict" id="txtHomeDistrict" class="form-control core-input txtDistrict" data-role="none">
+                              <option value="" selected>เลือกอำเภอ</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">ตำบล : <span class="text-danger">*</span></label>
+                          <select name="txtHomeSubdistrict" id="txtHomeSubdistrict" class="form-control core-input txtSubDistrict" data-role="none">
+                              <option value="" selected>เลือกตำบล</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-12">
+                        <h5 class="mb-3 pt-3 tsdn">ส่วนที่ 1.4 : ที่อยู่ที่ทำงาน</h5></div>
+                        <div class="col-12 pb-3" id="divBtnAddressStage_ifsame">
+                          <button type="button" class="btn btn-success btn-sm- bsdn tsdn" data-role="none" style="margin-top: 0px;" id="btnCopyAddress_1" onclick="setAddressStage(1)"><i class="fas fa-arrow-down"></i> คลิกที่นี่ หากที่อยู่และที่ทำงานเป็นที่เดียวกัน</button>
+                        </div>
+
+                        <div class="col-12 pb-3 dn" id="divBtnAddressStage_ifnotsame">
+                          <button type="button" class="btn btn-danger btn-sm- bsdn tsdn" data-role="none" style="margin-top: 0px;" id="btnCopyAddress_1" onclick="setAddressStage(0)"><i class="fas fa-plus"></i> คลิกที่นี่ หากที่อยู่และที่ทำงานเป็นคนละที่กัน</button>
+                        </div>
+                  </div>
+
+                  <div id="workAddress" class="">
+                              <div class="row">
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">บ้านเลขที่ : </label>
+                                      <input type="text" id="txtWorkNo" class="form-control core-input" placeholder="กรอกบ้านเลขที่ ..." data-role="none">
+                                  </div>
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">หมู่ที่ : </label>
+                                      <input type="text" id="txtWorkMoo" class="form-control core-input" placeholder="กรอกหมู่ที่ ..." data-role="none">
+                                  </div>
+                              </div>
+
+                              <div class="row">
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">ถนน : </label>
+                                      <input type="text" id="txtWorkRoad" class="form-control core-input" placeholder="กรอกชื่อถนน ..." data-role="none">
+                                  </div>
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">จังหวัด : <span class="text-danger">*</span></label>
+                                      <select name="txtWorkProvince" id="txtWorkProvince" class="form-control core-input txtProvince" data-role="none">
+                                          <option value="" selected>เลือกจังหวัด</option>
+                                      </select>
+                                  </div>
+
+                              </div>
+
+                              <div class="row">
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">อำเภอ : <span class="text-danger">*</span></label>
+                                      <select name="txtWorkDistrict" id="txtWorkDistrict" class="form-control core-input txtDistrict" data-role="none">
+                                          <option value="" selected>เลือกอำเภอ</option>
+                                      </select>
+                                  </div>
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">ตำบล : <span class="text-danger">*</span></label>
+                                      <select name="txtWorkSubdistrict" id="txtWorkSubdistrict" class="form-control core-input txtSubDistrict" data-role="none">
+                                          <option value="" selected>เลือกตำบล</option>
+                                      </select>
+                                  </div>
+                              </div>
+
+                  </div>
+
+                  <div class="form-group pb-5">
+                    <button class="btn btn-primary btn-block btn-lg" data-role="none" onclick="labor.savePart1_3()">บันทึก</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .part_1_3 -->
+
+      <div data-role="page" id="part_3" style="background: #fff;">
+        <div class="container-fluid" style="background: #fff;">
+          <div class="row" style="">
+            <div class="col-12 pt-3">
+              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative; z-index: 9999  !important;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
+            </div>
+          </div>
+          <div class="row pt-3 " style="margin-top: -38px;">
+            <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 169);">
+              <span data-ajax="false" style="color: rgb(0, 193, 169); font-size: 18px;"><span class="text-danger-">ส่วนที่ 3</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-3">
+          <div class="" style="top: 90px;">
+            <div class="row">
+              <div class="col-12 pl-3 pr-3">
+                <h4 class="tsdn text-dark">อาการผิดปกติของร่างกายจากการทำงาน</h4>
+                <form onsubmit="return false;" data-role="none">
+                  <div class="row">
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">บ้านเลขที่ : <span class="text-danger">*</span></label>
+                          <input type="text" id="txtHomeNo" class="form-control core-input" placeholder="กรอกบ้านเลขที่ ..." data-role="none">
+                      </div>
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">หมู่ที่ : </label>
+                          <input type="text" id="txtHomeMoo" class="form-control core-input" placeholder="กรอกหมู่ที่ ..." data-role="none">
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">ถนน : </label>
+                          <input type="text" id="txtHomeRoad" class="form-control core-input" placeholder="กรอกชื่อถนน ..." data-role="none">
+                      </div>
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">จังหวัด : <span class="text-danger">*</span></label>
+                          <select name="txtHomeProvince" id="txtHomeProvince" class="form-control core-input txtProvince" data-role="none">
+                              <option value="" selected>เลือกจังหวัด</option>
+                          </select>
+                      </div>
+
+                  </div>
+
+                  <div class="row">
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">อำเภอ : <span class="text-danger">*</span></label>
+                          <select name="txtHomeDistrict" id="txtHomeDistrict" class="form-control core-input txtDistrict" data-role="none">
+                              <option value="" selected>เลือกอำเภอ</option>
+                          </select>
+                      </div>
+                      <div class="form-group col-12 col-sm-6 mb-2">
+                          <label for="">ตำบล : <span class="text-danger">*</span></label>
+                          <select name="txtHomeSubdistrict" id="txtHomeSubdistrict" class="form-control core-input txtSubDistrict" data-role="none">
+                              <option value="" selected>เลือกตำบล</option>
+                          </select>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-12">
+                        <h5 class="mb-3 pt-3 tsdn">ส่วนที่ 1.4 : ที่อยู่ที่ทำงาน</h5></div>
+                        <div class="col-12 pb-3" id="divBtnAddressStage_ifsame">
+                          <button type="button" class="btn btn-success btn-sm- bsdn tsdn" data-role="none" style="margin-top: 0px;" id="btnCopyAddress_1" onclick="setAddressStage(1)"><i class="fas fa-arrow-down"></i> คลิกที่นี่ หากที่อยู่และที่ทำงานเป็นที่เดียวกัน</button>
+                        </div>
+
+                        <div class="col-12 pb-3 dn" id="divBtnAddressStage_ifnotsame">
+                          <button type="button" class="btn btn-danger btn-sm- bsdn tsdn" data-role="none" style="margin-top: 0px;" id="btnCopyAddress_1" onclick="setAddressStage(0)"><i class="fas fa-plus"></i> คลิกที่นี่ หากที่อยู่และที่ทำงานเป็นคนละที่กัน</button>
+                        </div>
+                  </div>
+
+                  <div id="workAddress" class="">
+                              <div class="row">
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">บ้านเลขที่ : </label>
+                                      <input type="text" id="txtWorkNo" class="form-control core-input" placeholder="กรอกบ้านเลขที่ ..." data-role="none">
+                                  </div>
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">หมู่ที่ : </label>
+                                      <input type="text" id="txtWorkMoo" class="form-control core-input" placeholder="กรอกหมู่ที่ ..." data-role="none">
+                                  </div>
+                              </div>
+
+                              <div class="row">
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">ถนน : </label>
+                                      <input type="text" id="txtWorkRoad" class="form-control core-input" placeholder="กรอกชื่อถนน ..." data-role="none">
+                                  </div>
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">จังหวัด : <span class="text-danger">*</span></label>
+                                      <select name="txtWorkProvince" id="txtWorkProvince" class="form-control core-input txtProvince" data-role="none">
+                                          <option value="" selected>เลือกจังหวัด</option>
+                                      </select>
+                                  </div>
+
+                              </div>
+
+                              <div class="row">
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">อำเภอ : <span class="text-danger">*</span></label>
+                                      <select name="txtWorkDistrict" id="txtWorkDistrict" class="form-control core-input txtDistrict" data-role="none">
+                                          <option value="" selected>เลือกอำเภอ</option>
+                                      </select>
+                                  </div>
+                                  <div class="form-group col-12 mb-2">
+                                      <label for="">ตำบล : <span class="text-danger">*</span></label>
+                                      <select name="txtWorkSubdistrict" id="txtWorkSubdistrict" class="form-control core-input txtSubDistrict" data-role="none">
+                                          <option value="" selected>เลือกตำบล</option>
+                                      </select>
+                                  </div>
+                              </div>
+
+                  </div>
+
+                  <div class="form-group pb-5">
+                    <button class="btn btn-primary btn-block btn-lg" data-role="none" onclick="labor.savePart1_3()">บันทึก</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- part_3 -->
+
+      <div data-role="page" id="part_5_1" style="background: #fff;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 pt-3">
+              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative; z-index: 9999  !important;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
+            </div>
+          </div>
+          <div class="row pt-3 " style="margin-top: -38px;">
+            <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 100);">
+              <a href="#" data-ajax="false" style="color: rgb(51, 51, 51); font-size: 18px;">สถานที่จัดกิจกรรมทั้งหมด</a>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-3">
+          <div id="map"></div>
+          <div id="map-tool-1">
+            <div class="card">
+              <div class="card-body">
+                <form onsubmit="return false;" data-role="none">
+                  <div class="form-group">
+                    <label for="">Latitude</label>
+                    <input type="text" id="txtLat1" class="form-control custom-input-1" data-role="none">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Longitude</label>
+                    <input type="text" id="txtLng1" class="form-control custom-input-1" data-role="none">
+                  </div>
+
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block" data-role="none" onclick="labor.addLocation()">บันทึกพิกัดนี้</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .part_5_1 -->
+
+      <div data-role="page" id="part_6" style="background: #fff;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 pt-3">
+              <a href="#app" data-transition="slide" data-direction="reverse" class="float-left text-dark mt-1 ml-2" style="position: relative; z-index: 9999  !important;"><i class="fas fa-chevron-left" style="font-size: 1.6em;"></i></a>
+            </div>
+          </div>
+          <div class="row pt-3 " style="margin-top: -38px;">
+            <div class="col-12 text-center pb-3" style="border: solid; border-width: 0px 0px 3px 0px; border-color: rgb(0, 193, 100);">
+              <a href="#" data-ajax="false" style="color: rgb(51, 51, 51); font-size: 18px;">ภาพถ่าย</a>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-3">
+          <div class="row">
+            <div class="col-12">
+
+            </div>
+          </div>
+
+          <div id="map-tool-1">
+            <div class="form-group">
+              <button class="btn btn-primary btn-lg btn-block" data-role="none" onclick="labor.addPhoto()"><i class="fas fa-camera"></i> ถ่ายภาพ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .part_6 -->
 
       <script type="text/javascript" src="../cordova.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSfKxbsrDqlaQnnZEktT3dyT2V1g_cXoA" async defer></script>
@@ -858,10 +1287,12 @@
 
       <script>
 
+        var office_stage = 0
+
         $(document).ready(function(){
 
           $('.textLaborCid').text(current_cid)
-          labor.getInfo(current_cid)
+          $('#txtCid').val(current_cid)
 
           iw.get_province()
           iw.setDateInput('#txtDD')
@@ -871,17 +1302,27 @@
           setTimeout(function(){
             // initMap()
             authen.user()
+            labor.getInfo(current_cid)
+            labor.getDataCompletely(current_cid)
             preload.hide()
           }, 2000)
         })
 
         $(function(){
-          $('#txtProvince').change(function(){
-            iw.get_district()
+          $('#txtHomeProvince').change(function(){
+            iw.get_district2($('#txtHomeProvince').val(), 'txtHomeDistrict')
           })
 
-          $('#txtDistrict').change(function(){
-            iw.get_subdistrict()
+          $('#txtHomeDistrict').change(function(){
+            iw.get_subdistrict2($('#txtHomeProvince').val(), $('#txtHomeDistrict').val(), 'txtHomeSubdistrict')
+          })
+
+          $('#txtWorkProvince').change(function(){
+            iw.get_district2($('#txtWorkProvince').val(), 'txtWorkDistrict')
+          })
+
+          $('#txtWorkDistrict').change(function(){
+            iw.get_subdistrict2($('#txtWorkProvince').val(), $('#txtWorkDistrict').val(), 'txtWorkSubdistrict')
           })
         })
 
@@ -918,6 +1359,18 @@
           }
         }
 
+        function setAddressStage(stage){
+          office_stage = stage
+          if(stage == 1){
+            $('#workAddress').addClass('dn')
+            $('#divBtnAddressStage_ifsame').addClass('dn')
+            $('#divBtnAddressStage_ifnotsame').removeClass('dn')
+          }else{
+            $('#workAddress').removeClass('dn')
+            $('#divBtnAddressStage_ifsame').removeClass('dn')
+            $('#divBtnAddressStage_ifnotsame').addClass('dn')
+          }
+        }
         function searchMapall(){
           var param = {
             searchKey: $('#txtSearchkey').val(),
@@ -950,6 +1403,18 @@
             preload.hide()
           }, 1000)
         }
+
+        function slide2(div, reversetrue){
+          var reverse = false;
+          if(reversetrue != null){
+            reverse = reversetrue
+          }
+          $.mobile.changePage( "#" + div, {
+            transition: "slide",
+            reverse: reverse,
+            changeHash: false
+          });
+        }
       </script>
     </body>
 </html>
@@ -978,7 +1443,7 @@
         <div class="text-center">
           <img src="../img/success.png" alt="" width="120px;" class="pt-4 pb-4">
           <h4>สำเร็จ</h4>
-          <p>รหัสผ่านของคุณได้ถูกเปลี่ยนเรียบร้อยแล้ว</p>
+          <p>บันทึกข้อมูลเรียบร้อยแล้ว</p>
           <div class="text-center">
             <button class="btn btn-success btn-block" data-role="none" data-dismiss="modal">รับทราบ</button>
           </div>

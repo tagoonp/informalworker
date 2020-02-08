@@ -2,7 +2,18 @@ var iw = {
   get_province(){
       var jxr = $.post(conf.api + 'core/province?stage=get', function(){}, 'json')
                  .always(function(snap){
-                   console.log(snap);
+                   // console.log(snap);
+                   if(fnc.json_exist(snap)){
+                       snap.forEach(i=>{
+                         $('.txtProvince').append('<option value="' + i.Changwat + '">' + i.Name + '</option>')
+                       })
+                   }
+                 })
+  },
+  get_province2(){
+      var jxr = $.post(conf.api + 'core/province?stage=get', function(){}, 'json')
+                 .always(function(snap){
+                   // console.log(snap);
                    if(fnc.json_exist(snap)){
                        snap.forEach(i=>{
                          $('.txtProvince').append('<option value="' + i.Changwat + '">' + i.Name + '</option>')
@@ -25,6 +36,21 @@ var iw = {
                   }
               })
   },
+  get_district2(prov, next_ele){
+    var param = {
+      prov: prov
+    }
+    $('.txtSubDistrict').html('<option value="" class="text-center">-- เลือกตำบล --</option>')
+    var jxr = $.post(conf.api + 'core/district?stage=get', param , function(){}, 'json')
+              .always(function(snap){
+                  if(fnc.json_exist(snap)){
+                      $('#' + next_ele).html('<option value="" class="text-center">-- เลือกอำเภอ --</option>')
+                      snap.forEach(i=>{
+                          $('#' + next_ele).append('<option value="' + i.Ampur + '">' + i.Name + '</option>')
+                      })
+                  }
+              })
+  },
   get_subdistrict(){
     var param = {
       prov: $('#txtProvince').val(),
@@ -32,11 +58,27 @@ var iw = {
     }
     var jxr = $.post(conf.api + 'core/sub_district?stage=get', param , function(){}, 'json')
               .always(function(snap){
-                console.log(snap);
+                // console.log(snap);
                 $('#txtSubdistrict').html('<option value="" class="text-center">-- เลือกตำบล --</option>')
                 if(fnc.json_exist(snap)){
                     snap.forEach(i=>{
                         $('#txtSubdistrict').append('<option value="' + i.Tumbon + '">' + i.Name + '</option>')
+                    })
+                }
+              })
+  },
+  get_subdistrict2(prov, dist, next_ele){
+    var param = {
+      prov: prov,
+      dist: dist
+    }
+    var jxr = $.post(conf.api + 'core/sub_district?stage=get', param , function(){}, 'json')
+              .always(function(snap){
+                // console.log(snap);
+                $('#' + next_ele).html('<option value="" class="text-center">-- เลือกตำบล --</option>')
+                if(fnc.json_exist(snap)){
+                    snap.forEach(i=>{
+                        $('#' + next_ele).append('<option value="' + i.Tumbon + '">' + i.Name + '</option>')
                     })
                 }
               })

@@ -206,7 +206,7 @@ body{
             left: 0px;
             bottom: 0px;
             /* background: rgb(201, 164, 112); */
-            z-index: 9999999999998 !important;
+            z-index: 98 !important;
           }
 
   #map-tool-1 {
@@ -215,7 +215,7 @@ body{
             left: 0px;
             bottom: 0px;
             padding: 20px;
-            z-index: 9999999999999 !important;
+            z-index: 99 !important;
           }
 
 .img-circle{
